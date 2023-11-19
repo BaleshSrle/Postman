@@ -1,0 +1,463 @@
+{
+	"info": {
+		"_postman_id": "9816248a-3efa-42fa-992e-92964ce588d0",
+		"name": "BookSearch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "KnjizaraKulturaSearch",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cb72819e-7368-479d-9246-bd6ff14e924c",
+						"exec": [
+							"/*pm.test(\"Statusni kod je 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Tijelo poruke sadržu navedenu variablu\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(pm.collectionVariables.get(\"BookName\"));\r",
+							"});*/"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "0ac72508-06dc-434d-bea7-3a35c6f0ecbd",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.knjizarakultura.com/proizvodi?search={{BookName}}",
+					"protocol": "https",
+					"host": [
+						"www",
+						"knjizarakultura",
+						"com"
+					],
+					"path": [
+						"proizvodi"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "{{BookName}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "KompjuterBibliotekaSearch",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cb72819e-7368-479d-9246-bd6ff14e924c",
+						"exec": [
+							"/*pm.test(\"Statusni kod je 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Tijelo poruke sadržu navedenu variablu\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(pm.collectionVariables.get(\"BookName\"));\r",
+							"});*/"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "a34620c1-5b17-4f54-b83c-e44ed7f8f0fc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "q",
+							"value": "{{BookName}}",
+							"type": "text"
+						},
+						{
+							"key": "button",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://kombib.rs/gde.php"
+			},
+			"response": []
+		},
+		{
+			"name": "KnjigaBaSearch",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cb72819e-7368-479d-9246-bd6ff14e924c",
+						"exec": [
+							"/*pm.test(\"Statusni kod je 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Tijelo poruke sadržu navedenu variablu\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(pm.collectionVariables.get(\"BookName\"));\r",
+							"});*/"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "4d23d0e0-6a26-4144-9427-bc7edccfdfca",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.knjiga.ba/catalogsearch/result/?q={{BookName}}&dir=asc&order=price",
+					"protocol": "https",
+					"host": [
+						"www",
+						"knjiga",
+						"ba"
+					],
+					"path": [
+						"catalogsearch",
+						"result",
+						""
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{BookName}}"
+						},
+						{
+							"key": "dir",
+							"value": "asc"
+						},
+						{
+							"key": "order",
+							"value": "price"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MyBookBaSearch",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cb72819e-7368-479d-9246-bd6ff14e924c",
+						"exec": [
+							"/*pm.test(\"Statusni kod je 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Tijelo poruke sadržu navedenu variablu\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(pm.collectionVariables.get(\"BookName\"));\r",
+							"});*/"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "c0c9c5b3-f965-451d-b388-8357580a6624",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mybook.ba/?post_type=product&s={{BookName}}",
+					"protocol": "https",
+					"host": [
+						"mybook",
+						"ba"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "post_type",
+							"value": "product"
+						},
+						{
+							"key": "s",
+							"value": "{{BookName}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LagunaSerach",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cb72819e-7368-479d-9246-bd6ff14e924c",
+						"exec": [
+							"/*pm.test(\"Statusni kod je 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Tijelo poruke sadržu navedenu variablu\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(pm.collectionVariables.get(\"BookName\"));\r",
+							"});*/"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "1b73d0cc-fe46-489b-a783-125e62a16261",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://laguna.rs/pretraga-laguna-{{BookName}}-str-1.html"
+			},
+			"response": []
+		},
+		{
+			"name": "DelfiSerachHTML",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cb72819e-7368-479d-9246-bd6ff14e924c",
+						"exec": [
+							"/*pm.test(\"Statusni kod je 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Tijelo poruke sadrži navedenu variablu\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(pm.collectionVariables.get(\"BookName\"));\r",
+							"});*/\r",
+							"/*var BookTitle = {\r",
+							"    \"product\": {\r",
+							"        \"title\": (pm.collectionVariables.get(\"BookName\"))\r",
+							"    }\r",
+							"};\r",
+							"var data1 = [true, false];\r",
+							"\r",
+							"pm.test('Book title is valid', function () {\r",
+							"    pm.expect(tv4.validate(data1, BookTitle)).to.be.true;\r",
+							"    //pm.expect(tv4.validate(BookTitle)).to.be.true;\r",
+							"});*/\r",
+							"/*pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.value).to.eql(100);\r",
+							"});*/"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "f50090f3-7e47-437e-8116-9656c1373477",
+						"exec": [
+							"/*pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {\r",
+							"    console.log(response.json());\r",
+							"});*/"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "26bd5f31-f1cd-431a-af1a-637a825942b1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://delfi.rs/pretraga?q={{BookName}}&category=all",
+					"protocol": "https",
+					"host": [
+						"delfi",
+						"rs"
+					],
+					"path": [
+						"pretraga"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{BookName}}"
+						},
+						{
+							"key": "category",
+							"value": "all"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GoodReadsSearch",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "685fb0e8-c146-4f8c-aa44-cee61d9dab8c",
+						"exec": [
+							"/*pm.test(\"Statusni kod je 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Tijelo poruke sadržu navedenu variablu\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(pm.collectionVariables.get(\"BookName\"));\r",
+							"});*/"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "7c123944-5c70-418f-8006-954cc37a2312",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.goodreads.com/search?q={{BookName}}",
+					"protocol": "https",
+					"host": [
+						"www",
+						"goodreads",
+						"com"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{BookName}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "inherit",
+		"inherit": {}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "1e0aa024-0068-4e65-884b-2fb9e5881f0e",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "bdd40448-573a-4c17-8e83-bd1538ebeb2b",
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Statusni kod je 200\", function () {",
+					"    pm.response.to.have.status(200);",
+					"});",
+					"pm.test(\"Tijelo poruke sadržu navedenu variablu\", function () {",
+					"    pm.expect(pm.response.text()).to.include(pm.collectionVariables.get(\"BookName\"));",
+					"});"
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BookName",
+			"value": "Kali",
+			"type": "string"
+		}
+	]
+}
