@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "fdca6f7b-98ac-4b74-b462-6e174240dc16",
+		"name": "TwitchShieldsBadge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetBadge",
+			"id": "47f70e53-f7a4-42e2-a875-c1ec886d6d57",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://img.shields.io/twitch/status/{{TwitchUsername}}?logo=twitch&logoColor=white&labelColor=9146ff",
+					"protocol": "https",
+					"host": [
+						"img",
+						"shields",
+						"io"
+					],
+					"path": [
+						"twitch",
+						"status",
+						"{{TwitchUsername}}"
+					],
+					"query": [
+						{
+							"key": "logo",
+							"value": "twitch"
+						},
+						{
+							"key": "logoColor",
+							"value": "white"
+						},
+						{
+							"key": "labelColor",
+							"value": "9146ff"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "5f59ad64-3bbb-421c-b93b-7127cd20a057",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "8feeede3-2d68-4443-8269-06de8d945bf3",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "TwitchUsername",
+			"value": "heilheidi",
+			"type": "string"
+		}
+	]
+}
