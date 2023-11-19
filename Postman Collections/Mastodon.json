@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "517cd3c4-8985-4de1-b85b-50e11a13090d",
+		"name": "Mastodon",
+		"description": "Getting Mastodon ID from Vivaldi Social and creating an follow badge by using the Mastodon ID and Social Follow Badge from Shields.io",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetMastodonId",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8abc2b57-871f-491c-9c3d-3d5ccd4f846e",
+						"exec": [
+							"pm.test(\"Statusni kod je 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "004bc98e-e91b-486a-af3a-a6ea58e392ee",
+						"exec": [
+							"pm.collectionVariables.unset(\"MastodonId\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "a35f93ea-7aa3-4c8b-aeff-d2fe0c62ea28",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{MastodonServerURL}}/api/v1/accounts/lookup?acct={{MastodonUserName}}",
+					"host": [
+						"{{MastodonServerURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"accounts",
+						"lookup"
+					],
+					"query": [
+						{
+							"key": "acct",
+							"value": "{{MastodonUserName}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MastodonFollowBadge",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "ef519b6f-66c2-4fe0-86dc-083443143d4c",
+						"exec": [
+							"pm.collectionVariables.get(\"MastodonId\");"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "22d3deda-f23c-4fdb-8c4f-c6967a4bc9e6",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "182aa6a2-acff-4e4d-b3ce-b43001ccf835",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://img.shields.io/mastodon/follow/{{MastodonId}}?domain={{MastodonServerURL}}",
+					"protocol": "https",
+					"host": [
+						"img",
+						"shields",
+						"io"
+					],
+					"path": [
+						"mastodon",
+						"follow",
+						"{{MastodonId}}"
+					],
+					"query": [
+						{
+							"key": "domain",
+							"value": "{{MastodonServerURL}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": {
+			"clientSecret": "{{VivaldiSocialSecretKey}}",
+			"clientId": "{{VivaldiSocialClientKey}}",
+			"refreshTokenUrl": "https://login.vivaldi.net/oauth/token",
+			"accessTokenUrl": "https://login.vivaldi.net/oauth/token",
+			"scope": "read read:accounts write follow",
+			"grant_type": "client_credentials",
+			"refreshRequestParams": [],
+			"tokenRequestParams": [],
+			"authRequestParams": [],
+			"challengeAlgorithm": "S256",
+			"addTokenTo": "header",
+			"client_authentication": "header"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "f29e316d-58b5-4a27-903b-0c57065e87d4",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "2fb90840-747d-49b6-bdba-08f485ef57aa",
+				"type": "text/javascript",
+				"exec": [
+					"let jsonData = pm.response.json();",
+					"pm.collectionVariables.set(\"MastodonId\", jsonData.id);"
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "MastodonServerURL",
+			"value": "https://social.vivaldi.net",
+			"type": "string"
+		},
+		{
+			"key": "VivaldiSocialClientKey",
+			"value": "BKX5ZZjhfMVgYwUHFUgmcK1yFyN1SnUke5LDNtsXgWU",
+			"type": "string"
+		},
+		{
+			"key": "VivaldiSocialSecretKey",
+			"value": "kFQHNaeu42G97MzodnI0umhxbjIuAutOqTnl-yCgnxc",
+			"type": "string"
+		},
+		{
+			"key": "MastodonUserName",
+			"value": "@baleshsrle",
+			"type": "string"
+		},
+		{
+			"key": "MastodonId",
+			"value": ""
+		}
+	]
+}
