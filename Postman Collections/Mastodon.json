@@ -26,7 +26,7 @@
 					"script": {
 						"id": "004bc98e-e91b-486a-af3a-a6ea58e392ee",
 						"exec": [
-							"//pm.collectionVariables.unset(\"MastodonId\");"
+							"pm.collectionVariables.unset(\"MastodonId\");"
 						],
 						"type": "text/javascript"
 					}
@@ -145,17 +145,17 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "c6274cc4-e6b3-4433-954f-82d7dec16331",
+				"id": "68933792-2fe9-4eed-b879-7f3b4ae5f9df",
 				"type": "text/javascript",
 				"exec": [
-					"pm.collectionVariables.unset(\"MastodonId\");"
+					"//pm.collectionVariables.unset(\"MastodonId\");"
 				]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
-				"id": "07695aaa-607a-4e70-bb04-47fb02852cd8",
+				"id": "bc08af41-29f7-443b-8126-275b7f549fb6",
 				"type": "text/javascript",
 				"exec": [
 					"let jsonData = pm.response.json();",
@@ -184,6 +184,10 @@
 			"key": "MastodonUserName",
 			"value": "@baleshsrle",
 			"type": "string"
+		},
+		{
+			"key": "MastodonId",
+			"value": ""
 		}
 	]
 }
