@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "107bf03c-50ea-4b07-9a35-646bc23a285a",
+		"name": "PhoneBooks",
+		"description": "This collection contains the requests that you could use for searching for contact details / informations by using their name (if you are searching for a person you could also use their full name or just their last name), name of the city / town that they are located in and the address.\n\nAlso, you could search for that info by using the telephone number of the person , but in case of M:TEL from Bosnia and Herzegovina you need to type in area code an then the rest of the phone number (ie. 05xxxxxxx for landline customer or 06xxxxxxx for the mobile line customer).\n\nAlso, in case of M:TEL from Bosnia and Herzegovina, their GET request can be used to also search for the contact information of the companies and small businesses, but then you should modify the _**isResidential**_ key from `true` to `false`.\n\nDISCLAMER: I tried to add to the list the requests for the other 2 main telecom operators (ie. BH Telecom and HT Eronet) from Bosnia and Herzegovina, and they \"oversimplified\" the URL of the request.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "mtelBiH",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "896af90e-312e-4677-bd96-1b976945c33a",
+						"exec": [
+							"const schema = {\r",
+							"\t\"definitions\": {},\r",
+							"\t\"$schema\": \"http://json-schema.org/draft-07/schema#\", \r",
+							"\t\"$id\": \"https://example.com/object1700382068.json\", \r",
+							"\t\"title\": \"Root\", \r",
+							"\t\"type\": \"object\",\r",
+							"\t\"required\": [\r",
+							"\t\t\"pagination\",\r",
+							"\t\t\"results\"\r",
+							"\t],\r",
+							"\t\"properties\": {\r",
+							"\t\t\"pagination\": {\r",
+							"\t\t\t\"$id\": \"#root/pagination\", \r",
+							"\t\t\t\"title\": \"Pagination\", \r",
+							"\t\t\t\"type\": \"object\",\r",
+							"\t\t\t\"required\": [\r",
+							"\t\t\t\t\"count\",\r",
+							"\t\t\t\t\"hasNext\",\r",
+							"\t\t\t\t\"page\",\r",
+							"\t\t\t\t\"totalCount\",\r",
+							"\t\t\t\t\"totalPages\"\r",
+							"\t\t\t],\r",
+							"\t\t\t\"properties\": {\r",
+							"\t\t\t\t\"count\": {\r",
+							"\t\t\t\t\t\"$id\": \"#root/pagination/count\", \r",
+							"\t\t\t\t\t\"title\": \"Count\", \r",
+							"\t\t\t\t\t\"type\": \"integer\",\r",
+							"\t\t\t\t\t\"default\": 0\r",
+							"\t\t\t\t},\r",
+							"\t\t\t\t\"hasNext\": {\r",
+							"\t\t\t\t\t\"$id\": \"#root/pagination/hasNext\", \r",
+							"\t\t\t\t\t\"title\": \"Hasnext\", \r",
+							"\t\t\t\t\t\"type\": \"boolean\",\r",
+							"\t\t\t\t\t\"default\": true\r",
+							"\t\t\t\t},\r",
+							"\t\t\t\t\"page\": {\r",
+							"\t\t\t\t\t\"$id\": \"#root/pagination/page\", \r",
+							"\t\t\t\t\t\"title\": \"Page\", \r",
+							"\t\t\t\t\t\"type\": \"integer\",\r",
+							"\t\t\t\t\t\"default\": 0\r",
+							"\t\t\t\t},\r",
+							"\t\t\t\t\"totalCount\": {\r",
+							"\t\t\t\t\t\"$id\": \"#root/pagination/totalCount\", \r",
+							"\t\t\t\t\t\"title\": \"Totalcount\", \r",
+							"\t\t\t\t\t\"type\": \"integer\",\r",
+							"\t\t\t\t\t\"default\": 0\r",
+							"\t\t\t\t},\r",
+							"\t\t\t\t\"totalPages\": {\r",
+							"\t\t\t\t\t\"$id\": \"#root/pagination/totalPages\", \r",
+							"\t\t\t\t\t\"title\": \"Totalpages\", \r",
+							"\t\t\t\t\t\"type\": \"integer\",\r",
+							"\t\t\t\t\t\"default\": 0\r",
+							"\t\t\t\t}\r",
+							"\t\t\t}\r",
+							"\t\t}\r",
+							",\r",
+							"\t\t\"results\": {\r",
+							"\t\t\t\"$id\": \"#root/results\", \r",
+							"\t\t\t\"title\": \"Results\", \r",
+							"\t\t\t\"type\": \"array\",\r",
+							"\t\t\t\"default\": [],\r",
+							"\t\t\t\"items\":{\r",
+							"\t\t\t\t\"$id\": \"#root/results/items\", \r",
+							"\t\t\t\t\"title\": \"Items\", \r",
+							"\t\t\t\t\"type\": \"object\",\r",
+							"\t\t\t\t\"required\": [\r",
+							"\t\t\t\t\t\"city\",\r",
+							"\t\t\t\t\t\"msisdn\",\r",
+							"\t\t\t\t\t\"name\",\r",
+							"\t\t\t\t\t\"street\"\r",
+							"\t\t\t\t],\r",
+							"\t\t\t\t\"properties\": {\r",
+							"\t\t\t\t\t\"city\": {\r",
+							"\t\t\t\t\t\t\"$id\": \"#root/results/items/city\", \r",
+							"\t\t\t\t\t\t\"title\": \"City\", \r",
+							"\t\t\t\t\t\t\"type\": \"string\",\r",
+							"\t\t\t\t\t\t\"default\": \"\",\r",
+							"\t\t\t\t\t\t\"pattern\": \"^.*$\"\r",
+							"\t\t\t\t\t},\r",
+							"\t\t\t\t\t\"msisdn\": {\r",
+							"\t\t\t\t\t\t\"$id\": \"#root/results/items/msisdn\", \r",
+							"\t\t\t\t\t\t\"title\": \"Msisdn\", \r",
+							"\t\t\t\t\t\t\"type\": \"string\",\r",
+							"\t\t\t\t\t\t\"default\": \"\",\r",
+							"\t\t\t\t\t\t\"pattern\": \"^.*$\"\r",
+							"\t\t\t\t\t},\r",
+							"\t\t\t\t\t\"name\": {\r",
+							"\t\t\t\t\t\t\"$id\": \"#root/results/items/name\", \r",
+							"\t\t\t\t\t\t\"title\": \"Name\", \r",
+							"\t\t\t\t\t\t\"type\": \"string\",\r",
+							"\t\t\t\t\t\t\"default\": \"\",\r",
+							"\t\t\t\t\t\t\"pattern\": \"^.*$\"\r",
+							"\t\t\t\t\t},\r",
+							"\t\t\t\t\t\"street\": {\r",
+							"\t\t\t\t\t\t\"$id\": \"#root/results/items/street\", \r",
+							"\t\t\t\t\t\t\"title\": \"Street\", \r",
+							"\t\t\t\t\t\t\"type\": \"string\",\r",
+							"\t\t\t\t\t\t\"default\": \"\",\r",
+							"\t\t\t\t\t\t\"pattern\": \"^.*$\"\r",
+							"\t\t\t\t\t}\r",
+							"\t\t\t\t}\r",
+							"\t\t\t}\r",
+							"\r",
+							"\t\t}\r",
+							"\t}\r",
+							"}\r",
+							"\r",
+							"pm.test(\"Odgovor sadrži validne JSON podatke\", () => {\r",
+							"    pm.response.to.have.jsonSchema(schema);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "5dc7ae66-8e82-4b79-833b-282cecd643a0",
+						"exec": [],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "d68c0123-95b3-487f-8c51-d462504b6dd2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mtel.ba/hybris/ecommerce/b2c/v1/support/customers?isResidential=true&customerInfo=Test&cityCode=Doboj&currentPage=0",
+					"protocol": "https",
+					"host": [
+						"mtel",
+						"ba"
+					],
+					"path": [
+						"hybris",
+						"ecommerce",
+						"b2c",
+						"v1",
+						"support",
+						"customers"
+					],
+					"query": [
+						{
+							"key": "isResidential",
+							"value": "true"
+						},
+						{
+							"key": "customerInfo",
+							"value": "Test"
+						},
+						{
+							"key": "cityCode",
+							"value": "Doboj"
+						},
+						{
+							"key": "currentPage",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "f0532a8a-4a77-438b-b548-08f96049552f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "913353ba-95f4-4ca3-956d-8342fffa08d5",
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Statusni kod je 200\", function () {",
+					"    pm.response.to.have.status(200);",
+					"});"
+				]
+			}
+		}
+	]
+}
