@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "0e23d46d-f136-4abc-92a9-853a6c4c5790",
+		"name": "RailwayTimetable",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Railways of FB&H",
+			"id": "679b80f8-ddda-42cc-8bf5-c8ac37a9ec61",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "redvoznje_pol",
+							"value": "Zenica",
+							"type": "text"
+						},
+						{
+							"key": "redvoznje_dol",
+							"value": "Sarajevo",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://www.zfbh.ba/red-voznje/"
+			},
+			"response": []
+		},
+		{
+			"name": "Railways of R. Srpska",
+			"id": "63a0cbe8-5f72-4710-b5ab-d3335b329c95",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Smjer",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "PocetnaStanica.StanicaId",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "KrajnjaStanica.StanicaId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "DatumPolaska",
+							"value": "17.01.2024",
+							"type": "text"
+						},
+						{
+							"key": "DatumPovratka",
+							"value": "19.01.2024",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": "https://www.zrs-rs.com/red-voznje"
+			},
+			"response": []
+		}
+	]
+}
