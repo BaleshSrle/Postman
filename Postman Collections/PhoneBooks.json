@@ -216,13 +216,61 @@
 					"mode": "formdata",
 					"formdata": [
 						{
-							"key": "033",
-							"value": "",
+							"key": "_portalimenikmvc_INSTANCE_fupE15A9jBpo_pozivni",
+							"value": "032",
+							"type": "text"
+						},
+						{
+							"key": "_portalimenikmvc_INSTANCE_fupE15A9jBpo_pozivni",
+							"value": "941321",
 							"type": "text"
 						}
 					]
 				},
-				"url": "https://moj.bhtelecom.ba/web/guest/imenik"
+				"url": {
+					"raw": "https://moj.bhtelecom.ba/web/guest/imenik?p_p_id=portalimenikmvc_INSTANCE_fupE15A9jBpo&p_p_state=normal&p_p_mode=view&_portalimenikmvc_INSTANCE_fupE15A9jBpo_javax.portlet.action=searchformnumber&_portalimenikmvc_INSTANCE_fupE15A9jBpo_mvcPath=%2FsearchNumber.jsp&_portalimenikmvc_INSTANCE_fupE15A9jBpo_jspPath=%2FsearchNumber.jsp&p_p_lifecycle=1",
+					"protocol": "https",
+					"host": [
+						"moj",
+						"bhtelecom",
+						"ba"
+					],
+					"path": [
+						"web",
+						"guest",
+						"imenik"
+					],
+					"query": [
+						{
+							"key": "p_p_id",
+							"value": "portalimenikmvc_INSTANCE_fupE15A9jBpo"
+						},
+						{
+							"key": "p_p_state",
+							"value": "normal"
+						},
+						{
+							"key": "p_p_mode",
+							"value": "view"
+						},
+						{
+							"key": "_portalimenikmvc_INSTANCE_fupE15A9jBpo_javax.portlet.action",
+							"value": "searchformnumber"
+						},
+						{
+							"key": "_portalimenikmvc_INSTANCE_fupE15A9jBpo_mvcPath",
+							"value": "%2FsearchNumber.jsp"
+						},
+						{
+							"key": "_portalimenikmvc_INSTANCE_fupE15A9jBpo_jspPath",
+							"value": "%2FsearchNumber.jsp"
+						},
+						{
+							"key": "p_p_lifecycle",
+							"value": "1"
+						}
+					]
+				}
 			},
 			"response": []
 		}
