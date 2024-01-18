@@ -273,6 +273,77 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "HTEronetNumberSearch",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "896af90e-312e-4677-bd96-1b976945c33a",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "5dc7ae66-8e82-4b79-833b-282cecd643a0",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "6316aecb-597f-47f7-ac0f-3faeb115f110",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "poziovni_broj2",
+							"value": "063",
+							"type": "text"
+						},
+						{
+							"key": "telefon",
+							"value": "864246",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.hteronet.ba/telefonski-imenik?action=check&type=broj",
+					"protocol": "https",
+					"host": [
+						"www",
+						"hteronet",
+						"ba"
+					],
+					"path": [
+						"telefonski-imenik"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "check"
+						},
+						{
+							"key": "type",
+							"value": "broj"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
