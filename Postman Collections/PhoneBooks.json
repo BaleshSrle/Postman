@@ -191,8 +191,8 @@
 					"script": {
 						"id": "896af90e-312e-4677-bd96-1b976945c33a",
 						"exec": [
-							"pm.test(\"tijeli poruke sadrži navedenu varijablu\", function() {\r",
-							"\r",
+							"pm.test(\"Tijelo poruke sadrži navedenu varijablu\", function() {\r",
+							"    pm.expect(pm.response.text()).to.include(pm.collectionVariables.get(\"SearchField\"));\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -227,11 +227,12 @@
 						{
 							"key": "search_address_book",
 							"value": "Pretra%C5%BEi",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						}
 					]
 				},
-				"url": "supernovabih.ba/telefonski-imenik/"
+				"url": "https://supernovabih.ba/telefonski-imenik/"
 			},
 			"response": []
 		}
