@@ -132,7 +132,9 @@
 					"listen": "prerequest",
 					"script": {
 						"id": "5dc7ae66-8e82-4b79-833b-282cecd643a0",
-						"exec": [],
+						"exec": [
+							""
+						],
 						"type": "text/javascript"
 					}
 				}
@@ -145,7 +147,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://mtel.ba/hybris/ecommerce/b2c/v1/support/customers?isResidential=true&customerInfo=Test&cityCode=Doboj&currentPage=0",
+					"raw": "https://mtel.ba/hybris/ecommerce/b2c/v1/support/customers?isResidential=true&customerInfo=Bale%C5%A1evi%C4%87&cityCode=Doboj&currentPage=0",
 					"protocol": "https",
 					"host": [
 						"mtel",
@@ -166,7 +168,7 @@
 						},
 						{
 							"key": "customerInfo",
-							"value": "Test"
+							"value": "Bale%C5%A1evi%C4%87"
 						},
 						{
 							"key": "cityCode",
