@@ -191,7 +191,9 @@
 					"script": {
 						"id": "896af90e-312e-4677-bd96-1b976945c33a",
 						"exec": [
-							""
+							"pm.test(\"tijeli poruke sadrži navedenu varijablu\", function() {\r",
+							"\r",
+							"});"
 						],
 						"type": "text/javascript"
 					}
