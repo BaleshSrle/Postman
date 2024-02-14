@@ -147,7 +147,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://mtel.ba/hybris/ecommerce/b2c/v1/support/customers?isResidential=true&customerInfo=Bale%C5%A1evi%C4%87&cityCode=Doboj&currentPage=0",
+					"raw": "https://mtel.ba/hybris/ecommerce/b2c/v1/support/customers?isResidential=true&customerInfo={{SearchField}}&cityCode=Doboj&currentPage=0",
 					"protocol": "https",
 					"host": [
 						"mtel",
@@ -168,7 +168,7 @@
 						},
 						{
 							"key": "customerInfo",
-							"value": "Bale%C5%A1evi%C4%87"
+							"value": "{{SearchField}}"
 						},
 						{
 							"key": "cityCode",
@@ -325,7 +325,18 @@
 				"header": [],
 				"body": {
 					"mode": "formdata",
-					"formdata": []
+					"formdata": [
+						{
+							"key": "keyword",
+							"value": "{{SearchField}}",
+							"type": "text"
+						},
+						{
+							"key": "search_address_book",
+							"value": "Pretra%C5%BEi",
+							"type": "text"
+						}
+					]
 				},
 				"url": "supernovabih.ba/telefonski-imenik/"
 			},
@@ -336,7 +347,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "01b4e99c-4114-4cdc-8959-891b2cdc696a",
+				"id": "ea671ece-47cc-4507-b3ec-2092a4327d1b",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -346,7 +357,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "85a43fea-8c0c-40a0-8c10-bc0a2c6b94c8",
+				"id": "5bc37182-6e74-4901-a257-cfb4f4ec553e",
 				"type": "text/javascript",
 				"exec": [
 					"pm.test(\"Statusni kod je 200\", function () {",
