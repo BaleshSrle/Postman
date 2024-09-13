@@ -315,7 +315,8 @@
 							"    pm.expect(jsonData.value).to.eql(100);\r",
 							"});*/"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				},
 				{
@@ -327,13 +328,15 @@
 							"    console.log(response.json());\r",
 							"});*/"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
 			"id": "26bd5f31-f1cd-431a-af1a-637a825942b1",
 			"protocolProfileBehavior": {
-				"disableBodyPruning": true
+				"disableBodyPruning": true,
+				"protocolVersion": "auto"
 			},
 			"request": {
 				"auth": {
@@ -389,13 +392,15 @@
 							"    pm.expect(pm.response.text()).to.include(pm.collectionVariables.get(\"BookName\"));\r",
 							"});*/"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
 			"id": "7c123944-5c70-418f-8006-954cc37a2312",
 			"protocolProfileBehavior": {
-				"disableBodyPruning": true
+				"disableBodyPruning": true,
+				"protocolVersion": "auto"
 			},
 			"request": {
 				"method": "GET",
