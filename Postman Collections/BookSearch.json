@@ -20,13 +20,15 @@
 							"    pm.expect(pm.response.text()).to.include(pm.collectionVariables.get(\"BookName\"));\r",
 							"});*/"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
 			"id": "0ac72508-06dc-434d-bea7-3a35c6f0ecbd",
 			"protocolProfileBehavior": {
-				"disableBodyPruning": true
+				"disableBodyPruning": true,
+				"protocolVersion": "auto"
 			},
 			"request": {
 				"auth": {
@@ -79,13 +81,15 @@
 							"    pm.expect(pm.response.text()).to.include(pm.collectionVariables.get(\"BookName\"));\r",
 							"});*/"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
 			"id": "a34620c1-5b17-4f54-b83c-e44ed7f8f0fc",
 			"protocolProfileBehavior": {
-				"disableBodyPruning": true
+				"disableBodyPruning": true,
+				"protocolVersion": "auto"
 			},
 			"request": {
 				"auth": {
@@ -127,13 +131,15 @@
 							"    pm.expect(pm.response.text()).to.include(pm.collectionVariables.get(\"BookName\"));\r",
 							"});*/"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
 			"id": "4d23d0e0-6a26-4144-9427-bc7edccfdfca",
 			"protocolProfileBehavior": {
-				"disableBodyPruning": true
+				"disableBodyPruning": true,
+				"protocolVersion": "auto"
 			},
 			"request": {
 				"auth": {
@@ -196,13 +202,15 @@
 							"    pm.expect(pm.response.text()).to.include(pm.collectionVariables.get(\"BookName\"));\r",
 							"});*/"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
 			"id": "c0c9c5b3-f965-451d-b388-8357580a6624",
 			"protocolProfileBehavior": {
-				"disableBodyPruning": true
+				"disableBodyPruning": true,
+				"protocolVersion": "auto"
 			},
 			"request": {
 				"auth": {
@@ -258,13 +266,15 @@
 							"    pm.expect(pm.response.text()).to.include(pm.collectionVariables.get(\"BookName\"));\r",
 							"});*/"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
 			"id": "1b73d0cc-fe46-489b-a783-125e62a16261",
 			"protocolProfileBehavior": {
-				"disableBodyPruning": true
+				"disableBodyPruning": true,
+				"protocolVersion": "auto"
 			},
 			"request": {
 				"auth": {
