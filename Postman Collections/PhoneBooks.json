@@ -125,7 +125,8 @@
 							"    pm.response.to.have.jsonSchema(schema);\r",
 							"});"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				},
 				{
@@ -135,13 +136,15 @@
 						"exec": [
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
 			"id": "d68c0123-95b3-487f-8c51-d462504b6dd2",
 			"protocolProfileBehavior": {
-				"disableBodyPruning": true
+				"disableBodyPruning": true,
+				"protocolVersion": "auto"
 			},
 			"request": {
 				"method": "GET",
@@ -195,7 +198,8 @@
 							"    pm.expect(pm.response.text()).to.include(pm.collectionVariables.get(\"SearchField\"));\r",
 							"});"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				},
 				{
@@ -205,13 +209,15 @@
 						"exec": [
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
 			"id": "6de17d0c-d8a3-4ba1-b9d2-fb33d29f35c2",
 			"protocolProfileBehavior": {
-				"disableBodyPruning": true
+				"disableBodyPruning": true,
+				"protocolVersion": "auto"
 			},
 			"request": {
 				"method": "POST",
