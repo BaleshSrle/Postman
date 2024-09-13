@@ -9,7 +9,8 @@
 			"name": "Railways of FB&H",
 			"id": "679b80f8-ddda-42cc-8bf5-c8ac37a9ec61",
 			"protocolProfileBehavior": {
-				"disableBodyPruning": true
+				"disableBodyPruning": true,
+				"protocolVersion": "auto"
 			},
 			"request": {
 				"method": "POST",
@@ -37,7 +38,8 @@
 			"name": "Railways of R. Srpska",
 			"id": "63a0cbe8-5f72-4710-b5ab-d3335b329c95",
 			"protocolProfileBehavior": {
-				"disableBodyPruning": true
+				"disableBodyPruning": true,
+				"protocolVersion": "auto"
 			},
 			"request": {
 				"method": "POST",
