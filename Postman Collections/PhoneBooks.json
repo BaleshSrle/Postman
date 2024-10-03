@@ -208,7 +208,7 @@
 						"id": "5dc7ae66-8e82-4b79-833b-282cecd643a0",
 						"exec": [
 							"pm.collectionVariables.unset(\"SearchField\");\r",
-							"pm.collectionVariables.set(\"SearchField\", \"Gospava\");"
+							"pm.collectionVariables.set(\"SearchField\", \"obren\");"
 						],
 						"type": "text/javascript",
 						"packages": {}
