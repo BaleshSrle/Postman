@@ -207,7 +207,8 @@
 					"script": {
 						"id": "5dc7ae66-8e82-4b79-833b-282cecd643a0",
 						"exec": [
-							""
+							"pm.collectionVariables.unset(\"SearchField\");\r",
+							"pm.collectionVariables.set(\"SearchField\", \"Gospava\");"
 						],
 						"type": "text/javascript",
 						"packages": {}
@@ -233,8 +234,7 @@
 						{
 							"key": "search_address_book",
 							"value": "Pretra%C5%BEi",
-							"type": "text",
-							"disabled": true
+							"type": "text"
 						}
 					]
 				},
