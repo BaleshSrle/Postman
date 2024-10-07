@@ -134,8 +134,8 @@
 					"script": {
 						"id": "5dc7ae66-8e82-4b79-833b-282cecd643a0",
 						"exec": [
-							"var encoded = encodeURIComponent(pm.environment.get(\"SearchField\"));\r",
-							"pm.environment.set(\"EncodedSearchField\", encoded);"
+							"//var encoded = encodeURIComponent(pm.environment.get(\"SearchField\"));\r",
+							"pm.environment.set(\"EncodedSearchField\", encodeURIComponent(\"SearchField\"));"
 						],
 						"type": "text/javascript",
 						"packages": {}
@@ -151,7 +151,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://mtel.ba/hybris/ecommerce/b2c/v1/support/customers?isResidential=false&customerInfo={{EncodedSearchField}}&cityCode=Doboj&currentPage=4",
+					"raw": "https://mtel.ba/hybris/ecommerce/b2c/v1/support/customers?isResidential=false&customerInfo={{EncodedSearchField}}&cityCode=Doboj&currentPage=0",
 					"protocol": "https",
 					"host": [
 						"mtel",
@@ -180,7 +180,7 @@
 						},
 						{
 							"key": "currentPage",
-							"value": "4"
+							"value": "0"
 						}
 					]
 				}
