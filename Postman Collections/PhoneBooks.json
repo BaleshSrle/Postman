@@ -207,8 +207,7 @@
 					"script": {
 						"id": "5dc7ae66-8e82-4b79-833b-282cecd643a0",
 						"exec": [
-							"pm.collectionVariables.unset(\"SearchField\");\r",
-							"pm.collectionVariables.set(\"SearchField\", \"obren\");"
+							""
 						],
 						"type": "text/javascript",
 						"packages": {}
@@ -247,7 +246,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "c97fe2b5-950f-44e9-b5f6-80b6bc9d273b",
+				"id": "b24c4be7-0e70-4f2e-b523-0a89c29ef09d",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -257,7 +256,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "0d8936dd-8097-4e53-8354-74926b8d4a2d",
+				"id": "36a48c4c-7c7e-47c3-9b73-6360d7b1a69e",
 				"type": "text/javascript",
 				"exec": [
 					"pm.test(\"Statusni kod je 200\", function () {",
