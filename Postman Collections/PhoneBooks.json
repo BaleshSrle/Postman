@@ -146,7 +146,7 @@
 			"id": "d68c0123-95b3-487f-8c51-d462504b6dd2",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
-				"protocolVersion": "auto"
+				"protocolVersion": "http2"
 			},
 			"request": {
 				"method": "GET",
@@ -219,7 +219,7 @@
 			"id": "6de17d0c-d8a3-4ba1-b9d2-fb33d29f35c2",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
-				"protocolVersion": "auto"
+				"protocolVersion": "http2"
 			},
 			"request": {
 				"method": "POST",
