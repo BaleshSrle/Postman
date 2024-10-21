@@ -10,7 +10,7 @@
 			"id": "679b80f8-ddda-42cc-8bf5-c8ac37a9ec61",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
-				"protocolVersion": "auto"
+				"protocolVersion": "http2"
 			},
 			"request": {
 				"method": "POST",
@@ -39,7 +39,7 @@
 			"id": "63a0cbe8-5f72-4710-b5ab-d3335b329c95",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
-				"protocolVersion": "auto"
+				"protocolVersion": "http2"
 			},
 			"request": {
 				"method": "POST",
