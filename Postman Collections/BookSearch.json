@@ -28,7 +28,7 @@
 			"id": "0ac72508-06dc-434d-bea7-3a35c6f0ecbd",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
-				"protocolVersion": "auto"
+				"protocolVersion": "http2"
 			},
 			"request": {
 				"auth": {
@@ -89,7 +89,7 @@
 			"id": "a34620c1-5b17-4f54-b83c-e44ed7f8f0fc",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
-				"protocolVersion": "auto"
+				"protocolVersion": "http2"
 			},
 			"request": {
 				"auth": {
@@ -139,7 +139,7 @@
 			"id": "4d23d0e0-6a26-4144-9427-bc7edccfdfca",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
-				"protocolVersion": "auto"
+				"protocolVersion": "http2"
 			},
 			"request": {
 				"auth": {
