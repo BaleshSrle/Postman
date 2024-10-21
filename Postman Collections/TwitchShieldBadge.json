@@ -9,7 +9,8 @@
 			"name": "GetBadge",
 			"id": "47f70e53-f7a4-42e2-a875-c1ec886d6d57",
 			"protocolProfileBehavior": {
-				"disableBodyPruning": true
+				"disableBodyPruning": true,
+				"protocolVersion": "http2"
 			},
 			"request": {
 				"method": "GET",
