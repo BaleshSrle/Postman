@@ -146,7 +146,7 @@
 			"id": "d68c0123-95b3-487f-8c51-d462504b6dd2",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
-				"protocolVersion": "http2"
+				"protocolVersion": "auto"
 			},
 			"request": {
 				"method": "GET",
