@@ -152,7 +152,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://mtel.ba/hybris/ecommerce/b2c/v1/support/customers?isResidential=false&customerInfo={{EncodedSearchField}}&cityCode=Doboj&currentPage=0",
+					"raw": "https://mtel.ba/hybris/ecommerce/b2c/v1/support/customers?isResidential=true&customerInfo={{EncodedSearchField}}&cityCode=Doboj&currentPage=0",
 					"protocol": "https",
 					"host": [
 						"mtel",
@@ -169,7 +169,7 @@
 					"query": [
 						{
 							"key": "isResidential",
-							"value": "false"
+							"value": "true"
 						},
 						{
 							"key": "customerInfo",
@@ -248,7 +248,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "3a828138-038d-4abf-b9f9-fd7883047857",
+				"id": "d7e51585-5bbf-43cb-ae55-99fa88bc444b",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -258,7 +258,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "e7de870c-a2de-4920-b769-474562ea5d04",
+				"id": "f701d3f6-6119-45e3-b72b-0074f5f42f8b",
 				"type": "text/javascript",
 				"exec": [
 					"pm.test(\"Statusni kod je 200\", function () {",
