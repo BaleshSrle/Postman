@@ -133,6 +133,7 @@
 							"    .tftable tr:hover {background-color:#e0ffff;}\r",
 							"</style>\r",
 							"<img src=\"https://mtel.ba/assets/Shared/images/logo-text.png\" style=\"padding-bottom: 8px;\">\r",
+							"<h1>Rezultati pretrage korisnika / pretplatnika</h1>\r",
 							"<table class=\"tftable\"  style=\"border-width:1px;\">\r",
 							"    <tr>\r",
 							"        <th>Broj telefona</th>\r",
