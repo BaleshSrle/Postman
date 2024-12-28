@@ -136,7 +136,7 @@
 							"<table class=\"tftable\"  style=\"border-width:1px;\">\r",
 							"    <tr>\r",
 							"        <th>Broj telefona</th>\r",
-							"        <th>Ime</th>\r",
+							"        <th>Korisnik / Pretplatnik</th>\r",
 							"        <th>Ulica</th>\r",
 							"        <th>Grad</th>\r",
 							"    </tr>\r",
