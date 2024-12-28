@@ -132,7 +132,7 @@
 							"    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #e52527;text-align: center;\"}\r",
 							"    .tftable tr:hover {background-color:#e0ffff;}\r",
 							"</style>\r",
-							"\r",
+							"<img src=\"https://mtel.ba/assets/Shared/images/logo-text.png\" style=\"padding-bottom: 8px;\">\r",
 							"<table class=\"tftable\"  style=\"border-width:1px;\">\r",
 							"    <tr>\r",
 							"        <th>Broj telefona</th>\r",
