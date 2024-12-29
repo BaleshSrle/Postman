@@ -158,7 +158,7 @@
 							"        {{/each}}\r",
 							"    </tbody>\r",
 							"</table>\r",
-							"<p>{{response.pagination.count}} od {{response.pagination.totalCount}}</p>\r",
+							"{{response.pagination.count}} od {{response.pagination.totalCount}}\r",
 							"`;\r",
 							"\r",
 							"function constructVisualizerPayload() {\r",
@@ -224,7 +224,7 @@
 						},
 						{
 							"key": "currentPage",
-							"value": "0",
+							"value": "5",
 							"disabled": true
 						}
 					]
