@@ -132,7 +132,6 @@
 							"<script>\r",
 							"    $(document).ready(function(){\r",
 							"        $(\"thead\").css(\"background-color\",\"#e52527\");\r",
-							"        $(\"tr\").css({\"border-top-color\": \"#e52527\", \"border-bottom-color\": \"#e52527\"});\r",
 							"    });\r",
 							"</script>\r",
 							"<!-- <style type=\"text/css\">\r",
