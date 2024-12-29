@@ -133,7 +133,7 @@
 							"    $(document).ready(function(){\r",
 							"        $(\"h3\").addClass(\"text-center\").css({\"color\": \"#e52527\", \"font-family\": \"Arial\"});\r",
 							"        $(\"thead\").css(\"background-color\",\"#e52527\");\r",
-							"        $(\"tr\").addClass(\"text-canter\");\r",
+							"        $(\"tr\").addClass(\"text-center\");\r",
 							"    });\r",
 							"</script>\r",
 							"<img src=\"https://mtel.ba/assets/Shared/images/logo-text.png\" class=\"p-2\">\r",
