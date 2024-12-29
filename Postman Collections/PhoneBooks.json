@@ -12,7 +12,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "896af90e-312e-4677-bd96-1b976945c33a",
+						"id": "bfe9bcc3-bfde-46d2-9bad-cac145f5c0e3",
 						"exec": [
 							"const schema = {\r",
 							"\t\"definitions\": {},\r",
@@ -124,6 +124,7 @@
 							"pm.test(\"Odgovor sadrži validne JSON podatke\", () => {\r",
 							"    pm.response.to.have.jsonSchema(schema);\r",
 							"});\r",
+							"\r",
 							"var template = `\r",
 							"<style type=\"text/css\">\r",
 							"    .tftable {font:14px Arial;color:#333333;width:100%;border-width: 1px;border-color: #e52527;border-collapse: collapse;}\r",
@@ -166,7 +167,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "5dc7ae66-8e82-4b79-833b-282cecd643a0",
+						"id": "a326e81f-047e-4715-9f02-388d6bff85e2",
 						"exec": [
 							"//var encoded = encodeURIComponent(pm.environment.get(\"SearchField\"));\r",
 							"pm.environment.set(\"EncodedSearchField\", encodeURIComponent(pm.collectionVariables.get(\"SearchField\")));\r",
