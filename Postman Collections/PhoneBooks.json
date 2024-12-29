@@ -187,7 +187,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://mtel.ba/hybris/ecommerce/b2c/v1/support/customers?isResidential=true&customerInfo={{EncodedSearchField}}&cityCode=Doboj",
+					"raw": "https://mtel.ba/hybris/ecommerce/b2c/v1/support/customers?isResidential=true&customerInfo={{EncodedSearchField}}",
 					"protocol": "https",
 					"host": [
 						"mtel",
@@ -212,7 +212,8 @@
 						},
 						{
 							"key": "cityCode",
-							"value": "Doboj"
+							"value": "Doboj",
+							"disabled": true
 						},
 						{
 							"key": "currentPage",
