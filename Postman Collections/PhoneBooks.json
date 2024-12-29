@@ -158,6 +158,7 @@
 							"        {{/each}}\r",
 							"    </tbody>\r",
 							"</table>\r",
+							"{{pagination.count}} od {{pagination.totalCount}}\r",
 							"`;\r",
 							"\r",
 							"function constructVisualizerPayload() {\r",
