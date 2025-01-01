@@ -160,7 +160,7 @@
 							"</table>\r",
 							"<hr>\r",
 							"<p class=\"small\">Broj prikazanih korsnika / pretplatnika {{response.pagination.count}} od {{response.pagination.totalCount}}.</p>\r",
-							"<p class=\"small\">Broj prikazanih korsnika / pretplatnika {{response.pagination.count}} od {{response.pagination.totalPages}}.</p>\r",
+							"<p class=\"small\">Prikazana stranica {{response.pagination.page}} od {{response.pagination.totalPages}}.</p>\r",
 							"`;\r",
 							"\r",
 							"function constructVisualizerPayload() {\r",
