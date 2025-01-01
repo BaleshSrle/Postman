@@ -160,7 +160,6 @@
 							"</table>\r",
 							"<hr>\r",
 							"<p class=\"small\">Broj prikazanih korsnika / pretplatnika {{response.pagination.count}} od {{response.pagination.totalCount}}.</p>\r",
-							"<p class=\"small\">Prikazana stranica {{(response.pagination.page)++}} od {{response.pagination.totalPages}}.</p>\r",
 							"`;\r",
 							"\r",
 							"function constructVisualizerPayload() {\r",
@@ -196,7 +195,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://mtel.ba/hybris/ecommerce/b2c/v1/support/customers?isResidential=true&customerInfo={{EncodedSearchField}}&currentPage=16",
+					"raw": "https://mtel.ba/hybris/ecommerce/b2c/v1/support/customers?isResidential=true&customerInfo={{EncodedSearchField}}&currentPage=0",
 					"protocol": "https",
 					"host": [
 						"mtel",
@@ -226,7 +225,7 @@
 						},
 						{
 							"key": "currentPage",
-							"value": "16"
+							"value": "0"
 						}
 					]
 				}
