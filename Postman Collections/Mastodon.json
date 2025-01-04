@@ -16,9 +16,11 @@
 						"exec": [
 							"pm.test(\"Statusni kod je 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
-							"});"
+							"});\r",
+							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				},
 				{
@@ -28,7 +30,8 @@
 						"exec": [
 							"pm.collectionVariables.unset(\"MastodonId\");"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
