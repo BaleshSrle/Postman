@@ -1,5 +1,7 @@
 # Postman Collections
 
+<img src="https://repology.org/badge/vertical-allrepos/postman.svg?exclude_unsupported=1&exclude_sources=modules,site" alt="Postman Packaging status" style="float: right;">
+
 This repository is a backup of some of my Postman Collections via Integrations
 
 ## Fork collections into your workspace
