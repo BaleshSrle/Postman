@@ -132,6 +132,7 @@
 							"<script>\r",
 							"    $(document).ready(function(){\r",
 							"        //$(\"h4, p\").addClass(\"text-center font-weight-bold\").css({\"color\": \"#e52527\", \"font-family\": \"Arial\"});\r",
+							"        $(\"h4, p\").addClass(\"text-danger text-center font-weight-bold\").css(\"font-family\", \"Arial\");\r",
 							"        //$(\"thead\").css(\"background-color\",\"#e52527\");\r",
 							"        $(\"thead\").children(\"tr\").addClass(\"bg-danger text-white\");\r",
 							"        $(\"tr\").addClass(\"text-center\");\r",
