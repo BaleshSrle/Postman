@@ -68,8 +68,7 @@
 							"\t\t\t\t\t\"default\": 0\r",
 							"\t\t\t\t}\r",
 							"\t\t\t}\r",
-							"\t\t}\r",
-							",\r",
+							"\t\t},\r",
 							"\t\t\"results\": {\r",
 							"\t\t\t\"$id\": \"#root/results\", \r",
 							"\t\t\t\"title\": \"Results\", \r",
@@ -119,7 +118,7 @@
 							"\r",
 							"\t\t}\r",
 							"\t}\r",
-							"}\r",
+							"};\r",
 							"\r",
 							"pm.test(\"Odgovor sadrži validne JSON podatke\", () => {\r",
 							"    pm.response.to.have.jsonSchema(schema);\r",
@@ -168,7 +167,8 @@
 							"    return { response: pm.response.json() }\r",
 							"}\r",
 							"\r",
-							"pm.visualizer.set(template, constructVisualizerPayload());"
+							"pm.visualizer.set(template, constructVisualizerPayload());\r",
+							""
 						],
 						"type": "text/javascript",
 						"packages": {}
