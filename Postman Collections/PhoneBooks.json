@@ -295,7 +295,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "3f9cf17c-c0d6-4a73-a131-38a346374c10",
+				"id": "ffa12fb3-8466-4293-b44d-15c8c63b2d90",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -305,7 +305,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "bd09495a-5e10-41f6-88f2-c71a9c3c2e17",
+				"id": "9aafaf95-16be-4f77-aa93-ea61e901d522",
 				"type": "text/javascript",
 				"exec": [
 					"pm.test(\"Statusni kod je 200\", function () {",
