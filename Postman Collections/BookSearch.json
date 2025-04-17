@@ -45,7 +45,25 @@
 						}
 					}
 				},
-				"url": "https://carobnaknjiga.rs/pretraga/{{BookName}}"
+				"url": {
+					"raw": "https://www.knjizarakultura.com/knjige/?search={{BookName}}",
+					"protocol": "https",
+					"host": [
+						"www",
+						"knjizarakultura",
+						"com"
+					],
+					"path": [
+						"knjige",
+						""
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "{{BookName}}"
+						}
+					]
+				}
 			},
 			"response": []
 		},
@@ -89,24 +107,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "https://www.knjizarakultura.com/proizvodi?search={{BookName}}",
-					"protocol": "https",
-					"host": [
-						"www",
-						"knjizarakultura",
-						"com"
-					],
-					"path": [
-						"proizvodi"
-					],
-					"query": [
-						{
-							"key": "search",
-							"value": "{{BookName}}"
-						}
-					]
-				}
+				"url": "https://carobnaknjiga.rs/pretraga/{{BookName}}"
 			},
 			"response": []
 		},
