@@ -49,7 +49,7 @@
 					"formdata": [
 						{
 							"key": "Smjer",
-							"value": "2",
+							"value": "1",
 							"type": "text"
 						},
 						{
@@ -64,13 +64,14 @@
 						},
 						{
 							"key": "DatumPolaska",
-							"value": "20.12.2024",
+							"value": "06.05.2025",
 							"type": "text"
 						},
 						{
 							"key": "DatumPovratka",
 							"value": "20.12.2024",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						}
 					]
 				},
