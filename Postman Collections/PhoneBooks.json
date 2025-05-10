@@ -197,7 +197,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://mtel.ba/hybris/ecommerce/b2c/v1/support/customers?isResidential=true&customerInfo={{EncodedSearchField}}&cityCode=&currentPage=0",
+					"raw": "https://mtel.ba/hybris/ecommerce/b2c/v1/support/customers?isResidential=true&customerInfo={{EncodedSearchField}}&currentPage=0",
 					"protocol": "https",
 					"host": [
 						"mtel",
@@ -222,7 +222,8 @@
 						},
 						{
 							"key": "cityCode",
-							"value": ""
+							"value": "",
+							"disabled": true
 						},
 						{
 							"key": "currentPage",
