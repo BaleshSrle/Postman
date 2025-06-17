@@ -171,8 +171,8 @@
 	"auth": {
 		"type": "oauth2",
 		"oauth2": {
-			"clientSecret": "{{VivaldiSocialSecretKey}}",
-			"clientId": "{{VivaldiSocialClientKey}}",
+			"clientSecret": "{{vault:VivaldiSocialSecretKey}}",
+			"clientId": "{{vault:VivaldiSocialClientKey}}",
 			"refreshTokenUrl": "https://login.vivaldi.net/oauth/token",
 			"accessTokenUrl": "https://login.vivaldi.net/oauth/token",
 			"scope": "read read:accounts write follow",
@@ -189,7 +189,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "68933792-2fe9-4eed-b879-7f3b4ae5f9df",
+				"id": "834508a0-28c8-46c5-82c6-d9b8c61ec7c9",
 				"type": "text/javascript",
 				"exec": [
 					"//pm.collectionVariables.unset(\"MastodonId\");"
@@ -199,7 +199,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "bc08af41-29f7-443b-8126-275b7f549fb6",
+				"id": "cbcf0dce-9a80-4448-9487-c84589c0c756",
 				"type": "text/javascript",
 				"exec": [
 					"let jsonData = pm.response.json();",
@@ -212,16 +212,6 @@
 		{
 			"key": "MastodonServerURL",
 			"value": "https://social.vivaldi.net",
-			"type": "string"
-		},
-		{
-			"key": "VivaldiSocialClientKey",
-			"value": "BKX5ZZjhfMVgYwUHFUgmcK1yFyN1SnUke5LDNtsXgWU",
-			"type": "string"
-		},
-		{
-			"key": "VivaldiSocialSecretKey",
-			"value": "kFQHNaeu42G97MzodnI0umhxbjIuAutOqTnl-yCgnxc",
 			"type": "string"
 		},
 		{
