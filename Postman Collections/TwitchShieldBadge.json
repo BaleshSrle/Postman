@@ -7,6 +7,27 @@
 	"item": [
 		{
 			"name": "GetShieldsBadge",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "aec89b3d-5e2a-48f9-8d08-2d37a22c6f29",
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "917cc3b1-5013-4f6e-b0a3-5e8dab6940c3",
+						"exec": [],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "47f70e53-f7a4-42e2-a875-c1ec886d6d57",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
