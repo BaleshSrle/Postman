@@ -1,12 +1,12 @@
 {
 	"info": {
 		"_postman_id": "fdca6f7b-98ac-4b74-b462-6e174240dc16",
-		"name": "TwitchShieldsBadge",
+		"name": "Twitch",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "GetBadge",
+			"name": "GetShieldsBadge",
 			"id": "47f70e53-f7a4-42e2-a875-c1ec886d6d57",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
@@ -43,6 +43,19 @@
 						}
 					]
 				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "d6b86b2f-9351-45c7-b817-590ff0c5a449",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://twitchtracker.com/api/channels/summary/{{TwitchUsername}}"
 			},
 			"response": []
 		}
