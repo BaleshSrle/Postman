@@ -47,7 +47,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "Tracker",
 			"id": "d6b86b2f-9351-45c7-b817-590ff0c5a449",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -64,7 +64,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "5f59ad64-3bbb-421c-b93b-7127cd20a057",
+				"id": "03be3307-53e8-43c4-8743-64a2fb2b556a",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -74,7 +74,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "8feeede3-2d68-4443-8269-06de8d945bf3",
+				"id": "d61e777f-2572-49b7-abcc-e36697a606b0",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -85,8 +85,7 @@
 	"variable": [
 		{
 			"key": "TwitchUsername",
-			"value": "heilheidi",
-			"type": "string"
+			"value": "hailheidi"
 		}
 	]
 }
