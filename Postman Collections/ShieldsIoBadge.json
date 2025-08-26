@@ -311,6 +311,45 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "3e82cba7-674d-4125-8e76-392e80762071",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://img.shields.io/badge/GitHub-181717?logo=github&logoSize=auto&labelColor=555555",
+							"protocol": "https",
+							"host": [
+								"img",
+								"shields",
+								"io"
+							],
+							"path": [
+								"badge",
+								"GitHub-181717"
+							],
+							"query": [
+								{
+									"key": "logo",
+									"value": "github"
+								},
+								{
+									"key": "logoSize",
+									"value": "auto"
+								},
+								{
+									"key": "labelColor",
+									"value": "555555"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "da198bb6-593e-4a1f-bc3c-9e6e443e39f6"
