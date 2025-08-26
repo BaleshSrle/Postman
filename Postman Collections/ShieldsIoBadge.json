@@ -1,0 +1,438 @@
+{
+	"info": {
+		"_postman_id": "0814d0c5-a862-4302-8a83-94453b1b2dfd",
+		"name": "ShieldsIoBadge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GitHub",
+			"item": [
+				{
+					"name": "ActivityLastWeek",
+					"id": "5d5cfc7c-180b-4d34-b288-25846b5d201b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://img.shields.io/github/commit-activity/w/{{ghOwner}}/{{ghRepo}}?logo=github&logoSize=auto&labelColor=181717",
+							"protocol": "https",
+							"host": [
+								"img",
+								"shields",
+								"io"
+							],
+							"path": [
+								"github",
+								"commit-activity",
+								"w",
+								"{{ghOwner}}",
+								"{{ghRepo}}"
+							],
+							"query": [
+								{
+									"key": "logo",
+									"value": "github"
+								},
+								{
+									"key": "logoSize",
+									"value": "auto"
+								},
+								{
+									"key": "labelColor",
+									"value": "181717"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActivityLastMonth",
+					"id": "d4d3e5a8-522d-4377-a263-09330df8b139",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://img.shields.io/github/commit-activity/m/{{ghOwner}}/{{ghRepo}}?logo=github&logoSize=auto&labelColor=181717",
+							"protocol": "https",
+							"host": [
+								"img",
+								"shields",
+								"io"
+							],
+							"path": [
+								"github",
+								"commit-activity",
+								"m",
+								"{{ghOwner}}",
+								"{{ghRepo}}"
+							],
+							"query": [
+								{
+									"key": "logo",
+									"value": "github"
+								},
+								{
+									"key": "logoSize",
+									"value": "auto"
+								},
+								{
+									"key": "labelColor",
+									"value": "181717"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActivityLastYear",
+					"id": "c80c09eb-1d8b-4511-9579-65ee3401a189",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://img.shields.io/github/commit-activity/y/{{ghOwner}}/{{ghRepo}}?logo=github&logoSize=auto&labelColor=181717",
+							"protocol": "https",
+							"host": [
+								"img",
+								"shields",
+								"io"
+							],
+							"path": [
+								"github",
+								"commit-activity",
+								"y",
+								"{{ghOwner}}",
+								"{{ghRepo}}"
+							],
+							"query": [
+								{
+									"key": "logo",
+									"value": "github"
+								},
+								{
+									"key": "logoSize",
+									"value": "auto"
+								},
+								{
+									"key": "labelColor",
+									"value": "181717"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActivityTotal",
+					"id": "a0bc8a2a-262f-456d-a3d4-d40d6f7de4d2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://img.shields.io/github/commit-activity/t/{{ghOwner}}/{{ghRepo}}?logo=github&logoSize=auto&labelColor=181717",
+							"protocol": "https",
+							"host": [
+								"img",
+								"shields",
+								"io"
+							],
+							"path": [
+								"github",
+								"commit-activity",
+								"t",
+								"{{ghOwner}}",
+								"{{ghRepo}}"
+							],
+							"query": [
+								{
+									"key": "logo",
+									"value": "github"
+								},
+								{
+									"key": "logoSize",
+									"value": "auto"
+								},
+								{
+									"key": "labelColor",
+									"value": "181717"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Created",
+					"id": "92bbe1b0-89d4-451f-8016-bd6c8892dc15",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://img.shields.io/github/created-at/{{ghOwner}}/{{ghRepo}}?logo=github&logoSize=auto&labelColor=181717",
+							"protocol": "https",
+							"host": [
+								"img",
+								"shields",
+								"io"
+							],
+							"path": [
+								"github",
+								"created-at",
+								"{{ghOwner}}",
+								"{{ghRepo}}"
+							],
+							"query": [
+								{
+									"key": "logo",
+									"value": "github"
+								},
+								{
+									"key": "logoSize",
+									"value": "auto"
+								},
+								{
+									"key": "labelColor",
+									"value": "181717"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RepoSize",
+					"id": "cda3242a-ca9f-415b-a280-17bb3228fb1c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://img.shields.io/github/repo-size/{{ghOwner}}/{{ghRepo}}?logo=github&logoSize=auto&labelColor=181717",
+							"protocol": "https",
+							"host": [
+								"img",
+								"shields",
+								"io"
+							],
+							"path": [
+								"github",
+								"repo-size",
+								"{{ghOwner}}",
+								"{{ghRepo}}"
+							],
+							"query": [
+								{
+									"key": "logo",
+									"value": "github"
+								},
+								{
+									"key": "logoSize",
+									"value": "auto"
+								},
+								{
+									"key": "labelColor",
+									"value": "181717"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "0bfab572-dfa2-4364-9287-0250bd1b885a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://img.shields.io/github/v/release/twbs/bootstrap?filter=v4.*&logo=bootstrap&logoColor=white&label=Bootstrap&labelColor=7952b3&color=7952b3",
+							"protocol": "https",
+							"host": [
+								"img",
+								"shields",
+								"io"
+							],
+							"path": [
+								"github",
+								"v",
+								"release",
+								"twbs",
+								"bootstrap"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "v4.*"
+								},
+								{
+									"key": "logo",
+									"value": "bootstrap"
+								},
+								{
+									"key": "logoColor",
+									"value": "white"
+								},
+								{
+									"key": "label",
+									"value": "Bootstrap"
+								},
+								{
+									"key": "labelColor",
+									"value": "7952b3"
+								},
+								{
+									"key": "color",
+									"value": "7952b3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "da198bb6-593e-4a1f-bc3c-9e6e443e39f6"
+		},
+		{
+			"name": "Twitch",
+			"item": [
+				{
+					"name": "GetShieldsBadge",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "aec89b3d-5e2a-48f9-8d08-2d37a22c6f29",
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "917cc3b1-5013-4f6e-b0a3-5e8dab6940c3",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "47f70e53-f7a4-42e2-a875-c1ec886d6d57",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"protocolVersion": "http2"
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://img.shields.io/twitch/status/{{TwitchUsername}}?logo=twitch&logoColor=white&labelColor=9146ff",
+							"protocol": "https",
+							"host": [
+								"img",
+								"shields",
+								"io"
+							],
+							"path": [
+								"twitch",
+								"status",
+								"{{TwitchUsername}}"
+							],
+							"query": [
+								{
+									"key": "logo",
+									"value": "twitch"
+								},
+								{
+									"key": "logoColor",
+									"value": "white"
+								},
+								{
+									"key": "labelColor",
+									"value": "9146ff"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tracker",
+					"id": "d6b86b2f-9351-45c7-b817-590ff0c5a449",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://twitchtracker.com/api/channels/summary/{{TwitchUsername}}"
+					},
+					"response": []
+				}
+			],
+			"id": "0a012457-5876-4588-932e-765c2456284f"
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "ce72a547-30da-4c01-89ea-51a04f4d833d",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "9e2f8f87-60c4-4d4d-8686-0e31e76b2463",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "TwitchUsername",
+			"value": ""
+		},
+		{
+			"key": "ghOwner",
+			"value": ""
+		},
+		{
+			"key": "ghRepo",
+			"value": ""
+		}
+	]
+}
