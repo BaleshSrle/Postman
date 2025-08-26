@@ -259,7 +259,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "VersionRelease",
 					"id": "0bfab572-dfa2-4364-9287-0250bd1b885a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -268,7 +268,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://img.shields.io/github/v/release/twbs/bootstrap?filter=v4.*&logo=bootstrap&logoColor=white&label=Bootstrap&labelColor=7952b3&color=7952b3",
+							"raw": "https://img.shields.io/github/v/release/twbs/bootstrap?filter=v4.*&logo=bootstrap&logoColor=white&logoSize=auto&label=Bootstrap&labelColor=7952b3&color=7952b3",
 							"protocol": "https",
 							"host": [
 								"img",
@@ -294,6 +294,68 @@
 								{
 									"key": "logoColor",
 									"value": "white"
+								},
+								{
+									"key": "logoSize",
+									"value": "auto"
+								},
+								{
+									"key": "label",
+									"value": "Bootstrap"
+								},
+								{
+									"key": "labelColor",
+									"value": "7952b3"
+								},
+								{
+									"key": "color",
+									"value": "7952b3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VersionTag",
+					"id": "ee183324-861d-447d-8d92-17dd6ca24fab",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://img.shields.io/github/v/release/twbs/bootstrap?filter=v4.*&logo=bootstrap&logoColor=white&logoSize=auto&label=Bootstrap&labelColor=7952b3&color=7952b3",
+							"protocol": "https",
+							"host": [
+								"img",
+								"shields",
+								"io"
+							],
+							"path": [
+								"github",
+								"v",
+								"release",
+								"twbs",
+								"bootstrap"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "v4.*"
+								},
+								{
+									"key": "logo",
+									"value": "bootstrap"
+								},
+								{
+									"key": "logoColor",
+									"value": "white"
+								},
+								{
+									"key": "logoSize",
+									"value": "auto"
 								},
 								{
 									"key": "label",
