@@ -326,7 +326,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://img.shields.io/github/v/release/twbs/bootstrap?filter=v4.*&logo=bootstrap&logoColor=white&logoSize=auto&label=Bootstrap&labelColor=7952b3&color=7952b3",
+							"raw": "https://img.shields.io/github/v/tag/desktop/desktop?logo=github&logoColor=white&logoSize=auto&label=Bootstrap",
 							"protocol": "https",
 							"host": [
 								"img",
@@ -336,18 +336,19 @@
 							"path": [
 								"github",
 								"v",
-								"release",
-								"twbs",
-								"bootstrap"
+								"tag",
+								"desktop",
+								"desktop"
 							],
 							"query": [
 								{
 									"key": "filter",
-									"value": "v4.*"
+									"value": "v4.*",
+									"disabled": true
 								},
 								{
 									"key": "logo",
-									"value": "bootstrap"
+									"value": "github"
 								},
 								{
 									"key": "logoColor",
@@ -363,11 +364,13 @@
 								},
 								{
 									"key": "labelColor",
-									"value": "7952b3"
+									"value": "7952b3",
+									"disabled": true
 								},
 								{
 									"key": "color",
-									"value": "7952b3"
+									"value": "7952b3",
+									"disabled": true
 								}
 							]
 						}
