@@ -294,7 +294,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "a77236e3-44fd-49b4-94e6-032558d542b3",
+				"id": "e1572f41-d0c9-4161-b335-43d371cbd300",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -304,7 +304,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "d6c2b765-3173-45fe-815c-84decd43636e",
+				"id": "203d483a-1c1f-4731-b7cf-ac18a03936fe",
 				"type": "text/javascript",
 				"exec": [
 					"pm.test(\"Statusni kod je 200\", function () {",
@@ -317,13 +317,11 @@
 	"variable": [
 		{
 			"key": "SearchField",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
 			"key": "EncodedSearchField",
-			"value": "",
-			"type": "string"
+			"value": ""
 		}
 	]
 }
