@@ -459,77 +459,13 @@
 				}
 			],
 			"id": "0a012457-5876-4588-932e-765c2456284f"
-		},
-		{
-			"name": "JSONDynamicBadge",
-			"id": "049f1dfc-1ca3-4488-8572-4aacfcae8c73",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://img.shields.io/badge/dynamic/json?url={{EncodedURL}}&query=%24.slug&prefix=[&sufix=]&logo=kick&logoColor=white&logoSize=auto&label=Kick&labelColor",
-					"protocol": "https",
-					"host": [
-						"img",
-						"shields",
-						"io"
-					],
-					"path": [
-						"badge",
-						"dynamic",
-						"json"
-					],
-					"query": [
-						{
-							"key": "url",
-							"value": "{{EncodedURL}}"
-						},
-						{
-							"key": "query",
-							"value": "%24.slug"
-						},
-						{
-							"key": "prefix",
-							"value": "["
-						},
-						{
-							"key": "sufix",
-							"value": "]"
-						},
-						{
-							"key": "logo",
-							"value": "kick"
-						},
-						{
-							"key": "logoColor",
-							"value": "white"
-						},
-						{
-							"key": "logoSize",
-							"value": "auto"
-						},
-						{
-							"key": "label",
-							"value": "Kick"
-						},
-						{
-							"key": "labelColor",
-							"value": null
-						}
-					]
-				}
-			},
-			"response": []
 		}
 	],
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "7545846a-675d-450d-8aa4-694662ecebdc",
+				"id": "ba94a1cd-7f49-4486-8592-f7fc1ca5a093",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -541,7 +477,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "f67192c9-2bb0-499b-a016-6881c80faaf9",
+				"id": "663c0929-2ac2-45bb-8cd8-19406539b6d3",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -562,14 +498,6 @@
 		},
 		{
 			"key": "ghRepo",
-			"value": ""
-		},
-		{
-			"key": "URL",
-			"value": ""
-		},
-		{
-			"key": "EncodedURL",
 			"value": ""
 		}
 	]
