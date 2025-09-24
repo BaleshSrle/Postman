@@ -326,7 +326,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://img.shields.io/github/v/tag/desktop/desktop?filter=!*-*-*a*&logo=github&logoColor=white&logoSize=auto&label=Github Desktop",
+							"raw": "https://img.shields.io/github/v/tag/desktop/desktop?filter=!*-*-*&logo=github&logoColor=white&logoSize=auto&label=Github Desktop",
 							"protocol": "https",
 							"host": [
 								"img",
@@ -343,7 +343,7 @@
 							"query": [
 								{
 									"key": "filter",
-									"value": "!*-*-*a*"
+									"value": "!*-*-*"
 								},
 								{
 									"key": "logo",
