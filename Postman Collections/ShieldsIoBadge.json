@@ -459,6 +459,18 @@
 				}
 			],
 			"id": "0a012457-5876-4588-932e-765c2456284f"
+		},
+		{
+			"name": "JSONDynamicBadge",
+			"id": "049f1dfc-1ca3-4488-8572-4aacfcae8c73",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"event": [
