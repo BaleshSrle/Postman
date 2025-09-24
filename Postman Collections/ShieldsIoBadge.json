@@ -486,20 +486,22 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "ce72a547-30da-4c01-89ea-51a04f4d833d",
+				"id": "1a07dd5b-a543-47ab-9c02-f40df68a1681",
 				"type": "text/javascript",
 				"packages": {},
+				"requests": {},
 				"exec": [
-					""
+					"pm.environment.set(\"EncodedSearchField\", encodeURIComponent(pm.collectionVariables.get(\"SearchField\")));"
 				]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
-				"id": "9e2f8f87-60c4-4d4d-8686-0e31e76b2463",
+				"id": "3fa25454-9d89-4c03-b745-fe1e02257e04",
 				"type": "text/javascript",
 				"packages": {},
+				"requests": {},
 				"exec": [
 					""
 				]
@@ -517,6 +519,14 @@
 		},
 		{
 			"key": "ghRepo",
+			"value": ""
+		},
+		{
+			"key": "URL",
+			"value": ""
+		},
+		{
+			"key": "EncodedURL",
 			"value": ""
 		}
 	]
