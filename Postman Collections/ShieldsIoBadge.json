@@ -468,7 +468,16 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "?url={}",
+					"query": [
+						{
+							"key": "url",
+							"value": "{}"
+						}
+					]
+				}
 			},
 			"response": []
 		}
