@@ -470,7 +470,18 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "?url={{EncodedURL}}&query&logo",
+					"raw": "https://img.shields.io/badge/dynamic/json?url={{EncodedURL}}&query&prefix&sufix&logo&logoColor=white&logoSize=auto&label&labelColor",
+					"protocol": "https",
+					"host": [
+						"img",
+						"shields",
+						"io"
+					],
+					"path": [
+						"badge",
+						"dynamic",
+						"json"
+					],
 					"query": [
 						{
 							"key": "url",
@@ -481,9 +492,32 @@
 							"value": null
 						},
 						{
+							"key": "prefix",
+							"value": null
+						},
+						{
+							"key": "sufix",
+							"value": null
+						},
+						{
 							"key": "logo",
-							"value": null,
-							"type": "text"
+							"value": null
+						},
+						{
+							"key": "logoColor",
+							"value": "white"
+						},
+						{
+							"key": "logoSize",
+							"value": "auto"
+						},
+						{
+							"key": "label",
+							"value": null
+						},
+						{
+							"key": "labelColor",
+							"value": null
 						}
 					]
 				}
