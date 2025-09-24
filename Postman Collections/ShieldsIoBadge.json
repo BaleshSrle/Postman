@@ -470,7 +470,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://img.shields.io/badge/dynamic/json?url={{EncodedURL}}&query&prefix&sufix&logo&logoColor=white&logoSize=auto&label&labelColor",
+					"raw": "https://img.shields.io/badge/dynamic/json?url={{EncodedURL}}&query=%24.slug&prefix=[&sufix=]&logo=kick&logoColor=white&logoSize=auto&label=Kick&labelColor",
 					"protocol": "https",
 					"host": [
 						"img",
@@ -489,19 +489,19 @@
 						},
 						{
 							"key": "query",
-							"value": null
+							"value": "%24.slug"
 						},
 						{
 							"key": "prefix",
-							"value": null
+							"value": "["
 						},
 						{
 							"key": "sufix",
-							"value": null
+							"value": "]"
 						},
 						{
 							"key": "logo",
-							"value": null
+							"value": "kick"
 						},
 						{
 							"key": "logoColor",
@@ -513,7 +513,7 @@
 						},
 						{
 							"key": "label",
-							"value": null
+							"value": "Kick"
 						},
 						{
 							"key": "labelColor",
