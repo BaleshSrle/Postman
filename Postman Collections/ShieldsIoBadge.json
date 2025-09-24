@@ -470,11 +470,20 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "?url={}",
+					"raw": "?url={{EncodedURL}}&query&logo",
 					"query": [
 						{
 							"key": "url",
-							"value": "{}"
+							"value": "{{EncodedURL}}"
+						},
+						{
+							"key": "query",
+							"value": null
+						},
+						{
+							"key": "logo",
+							"value": null,
+							"type": "text"
 						}
 					]
 				}
@@ -486,19 +495,19 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "1a07dd5b-a543-47ab-9c02-f40df68a1681",
+				"id": "1fa1d2f8-ed1c-4fdd-84ab-59022952b7cc",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
 				"exec": [
-					"pm.environment.set(\"EncodedSearchField\", encodeURIComponent(pm.collectionVariables.get(\"SearchField\")));"
+					"pm.environment.set(\"EncodedURL\", encodeURIComponent(pm.collectionVariables.get(\"URL\")));"
 				]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
-				"id": "3fa25454-9d89-4c03-b745-fe1e02257e04",
+				"id": "f6681254-303c-400d-bc5a-a100df702374",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
