@@ -199,7 +199,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://mtel.ba/hybris/ecommerce/b2c/v1/support/customers?isResidential=false&customerInfo={{EncodedSearchField}}&cityCode=DOBOJ&currentPage=1",
+					"raw": "https://mtel.ba/hybris/ecommerce/b2c/v1/support/customers?isResidential=false&customerInfo={{EncodedSearchField}}&cityCode=DOBOJ&currentPage=0",
 					"protocol": "https",
 					"host": [
 						"mtel",
@@ -228,7 +228,7 @@
 						},
 						{
 							"key": "currentPage",
-							"value": "1"
+							"value": "0"
 						}
 					]
 				}
