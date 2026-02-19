@@ -39,7 +39,7 @@
 			"id": "63a0cbe8-5f72-4710-b5ab-d3335b329c95",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
-				"protocolVersion": "http2"
+				"protocolVersion": "http1"
 			},
 			"request": {
 				"method": "POST",
