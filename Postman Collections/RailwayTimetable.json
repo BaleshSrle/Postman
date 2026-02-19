@@ -43,7 +43,13 @@
 			},
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "formdata",
 					"formdata": [
@@ -64,7 +70,7 @@
 						},
 						{
 							"key": "DatumPolaska",
-							"value": "06.05.2025.",
+							"value": "19.02.2026.",
 							"type": "text"
 						},
 						{
