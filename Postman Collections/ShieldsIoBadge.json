@@ -491,19 +491,20 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "cc9fb635-c790-4362-9e92-38915eb8917f",
+				"id": "cb5e81ae-be85-423a-90ec-4baa137ba180",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
 				"exec": [
-					"pm.environment.set(\"EncodedURL\", encodeURIComponent(pm.collectionVariables.get(\"jsonURL\")));"
+					"pm.environment.set(\"EncodedURL\", encodeURIComponent(pm.collectionVariables.get(\"jsonURL\")));",
+					"pm.environment.set(\"EncodedLabel\", encodeURIComponent(pm.collectionVariables.get(\"label\")));"
 				]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
-				"id": "23eac3aa-f062-49e7-a8c3-f5b9f3249269",
+				"id": "355ea42d-0434-4b85-a694-ddffb466c7ad",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -537,6 +538,15 @@
 		{
 			"key": "EncodedURL",
 			"value": ""
+		},
+		{
+			"key": "label",
+			"value": ""
+		},
+		{
+			"key": "EncodedLabel",
+			"value": "",
+			"type": "default"
 		}
 	]
 }
