@@ -18,15 +18,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://img.shields.io/github/commit-activity/w/{{ghOwner}}/{{ghRepo}}?logo=github&logoSize=auto&labelColor=181717",
-							"protocol": "https",
+							"raw": "{{ShieldsIoURL}}github/commit-activity/w/{{ghOwner}}/{{ghRepo}}?logo=github&logoSize=auto&labelColor=181717",
 							"host": [
-								"img",
-								"shields",
-								"io"
+								"{{ShieldsIoURL}}github"
 							],
 							"path": [
-								"github",
 								"commit-activity",
 								"w",
 								"{{ghOwner}}",
@@ -60,15 +56,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://img.shields.io/github/commit-activity/m/{{ghOwner}}/{{ghRepo}}?logo=github&logoSize=auto&labelColor=181717",
-							"protocol": "https",
+							"raw": "{{ShieldsIoURL}}github/commit-activity/m/{{ghOwner}}/{{ghRepo}}?logo=github&logoSize=auto&labelColor=181717",
 							"host": [
-								"img",
-								"shields",
-								"io"
+								"{{ShieldsIoURL}}github"
 							],
 							"path": [
-								"github",
 								"commit-activity",
 								"m",
 								"{{ghOwner}}",
@@ -102,15 +94,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://img.shields.io/github/commit-activity/y/{{ghOwner}}/{{ghRepo}}?logo=github&logoSize=auto&labelColor=181717",
-							"protocol": "https",
+							"raw": "{{ShieldsIoURL}}github/commit-activity/y/{{ghOwner}}/{{ghRepo}}?logo=github&logoSize=auto&labelColor=181717",
 							"host": [
-								"img",
-								"shields",
-								"io"
+								"{{ShieldsIoURL}}github"
 							],
 							"path": [
-								"github",
 								"commit-activity",
 								"y",
 								"{{ghOwner}}",
@@ -144,15 +132,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://img.shields.io/github/commit-activity/t/{{ghOwner}}/{{ghRepo}}?logo=github&logoSize=auto&labelColor=181717",
-							"protocol": "https",
+							"raw": "{{ShieldsIoURL}}github/commit-activity/t/{{ghOwner}}/{{ghRepo}}?logo=github&logoSize=auto&labelColor=181717",
 							"host": [
-								"img",
-								"shields",
-								"io"
+								"{{ShieldsIoURL}}github"
 							],
 							"path": [
-								"github",
 								"commit-activity",
 								"t",
 								"{{ghOwner}}",
@@ -186,15 +170,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://img.shields.io/github/created-at/{{ghOwner}}/{{ghRepo}}?logo=github&logoSize=auto&labelColor=181717",
-							"protocol": "https",
+							"raw": "{{ShieldsIoURL}}github/created-at/{{ghOwner}}/{{ghRepo}}?logo=github&logoSize=auto&labelColor=181717",
 							"host": [
-								"img",
-								"shields",
-								"io"
+								"{{ShieldsIoURL}}github"
 							],
 							"path": [
-								"github",
 								"created-at",
 								"{{ghOwner}}",
 								"{{ghRepo}}"
@@ -227,15 +207,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://img.shields.io/github/repo-size/{{ghOwner}}/{{ghRepo}}?logo=github&logoSize=auto&labelColor=181717",
-							"protocol": "https",
+							"raw": "{{ShieldsIoURL}}github/repo-size/{{ghOwner}}/{{ghRepo}}?logo=github&logoSize=auto&labelColor=181717",
 							"host": [
-								"img",
-								"shields",
-								"io"
+								"{{ShieldsIoURL}}github"
 							],
 							"path": [
-								"github",
 								"repo-size",
 								"{{ghOwner}}",
 								"{{ghRepo}}"
