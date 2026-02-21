@@ -361,15 +361,20 @@
 									""
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						},
 						{
 							"listen": "prerequest",
 							"script": {
 								"id": "917cc3b1-5013-4f6e-b0a3-5e8dab6940c3",
-								"exec": [],
-								"type": "text/javascript"
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -382,15 +387,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://img.shields.io/twitch/status/{{TwitchUsername}}?logo=twitch&logoColor=white&labelColor=9146ff",
-							"protocol": "https",
+							"raw": "{{ShieldsIoURL}}twitch/status/{{TwitchUsername}}?logo=twitch&logoColor=white&labelColor=9146ff",
 							"host": [
-								"img",
-								"shields",
-								"io"
+								"{{ShieldsIoURL}}twitch"
 							],
 							"path": [
-								"twitch",
 								"status",
 								"{{TwitchUsername}}"
 							],
@@ -430,6 +431,20 @@
 		},
 		{
 			"name": "DynamicJsonBadge",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "8939ad78-68c1-4211-9d5a-bca7f83b9cab",
+						"exec": [
+							"const jsonURL = pm.environment.get(\"ghOwner\") + \"/\" + pm.environment.get(\"ghRepo\");"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
 			"id": "3ca90f97-48c8-4794-8a75-2caa4fdcfbd9",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -437,7 +452,35 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "{{ShieldsIoURL}}badge/dynamic/json/"
+				"url": {
+					"raw": "{{ShieldsIoURL}}badge/dynamic/json/?url&query&style&label",
+					"host": [
+						"{{ShieldsIoURL}}badge"
+					],
+					"path": [
+						"dynamic",
+						"json",
+						""
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": null
+						},
+						{
+							"key": "query",
+							"value": null
+						},
+						{
+							"key": "style",
+							"value": null
+						},
+						{
+							"key": "label",
+							"value": null
+						}
+					]
+				}
 			},
 			"response": []
 		}
@@ -446,7 +489,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "090dffa9-6182-4fa4-b640-a207549b0fab",
+				"id": "258ed74a-9ac8-4f83-8b11-e3b19dc23594",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -458,7 +501,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "3cbeda53-7840-4130-8273-6aff198e4c74",
+				"id": "763546fc-d669-4b5e-aaa6-63fc1f9f7101",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -484,6 +527,11 @@
 		{
 			"key": "ShieldsIoURL",
 			"value": ""
+		},
+		{
+			"key": "jsonURL",
+			"value": "",
+			"type": "default"
 		}
 	]
 }
