@@ -455,7 +455,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{ShieldsIoURL}}badge/dynamic/json/?url={{&query&style&label",
+					"raw": "{{ShieldsIoURL}}badge/dynamic/json/?url={{EncodedJSONurl}}&query&style&label",
 					"host": [
 						"{{ShieldsIoURL}}badge"
 					],
@@ -467,7 +467,7 @@
 					"query": [
 						{
 							"key": "url",
-							"value": "{{"
+							"value": "{{EncodedJSONurl}}"
 						},
 						{
 							"key": "query",
