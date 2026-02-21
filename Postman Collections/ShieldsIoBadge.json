@@ -455,7 +455,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{ShieldsIoURL}}badge/dynamic/json/?url={{EncodedURL}}&query&style=for-the-badge&label",
+					"raw": "{{ShieldsIoURL}}badge/dynamic/json/?url={{EncodedURL}}&query&style=for-the-badge&label={{EncodedLabel}}",
 					"host": [
 						"{{ShieldsIoURL}}badge"
 					],
@@ -479,7 +479,7 @@
 						},
 						{
 							"key": "label",
-							"value": null
+							"value": "{{EncodedLabel}}"
 						}
 					]
 				}
@@ -491,7 +491,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "cb5e81ae-be85-423a-90ec-4baa137ba180",
+				"id": "01055f1c-510f-4466-abff-d1a95578610f",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -504,7 +504,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "355ea42d-0434-4b85-a694-ddffb466c7ad",
+				"id": "2e5dc346-e100-4c0b-9382-f25ddffb5753",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -545,6 +545,9 @@
 		},
 		{
 			"key": "EncodedLabel",
+			"value": ""
+		},
+		{
 			"value": "",
 			"type": "default"
 		}
