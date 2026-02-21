@@ -437,7 +437,7 @@
 					"script": {
 						"id": "8939ad78-68c1-4211-9d5a-bca7f83b9cab",
 						"exec": [
-							"const jsonURL = pm.environment.get(\"ghOwner\") + \"/\" + pm.environment.get(\"ghRepo\");"
+							"const jsonURL = pm.environment.get(\"jsonURL\");"
 						],
 						"type": "text/javascript",
 						"packages": {},
@@ -489,7 +489,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "258ed74a-9ac8-4f83-8b11-e3b19dc23594",
+				"id": "b3db3d8c-6a8d-41af-98e0-e9aaec22fb07",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -501,7 +501,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "763546fc-d669-4b5e-aaa6-63fc1f9f7101",
+				"id": "dcbab77b-8476-4dee-ab47-ab19ab83a726",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -530,8 +530,7 @@
 		},
 		{
 			"key": "jsonURL",
-			"value": "",
-			"type": "default"
+			"value": ""
 		}
 	]
 }
