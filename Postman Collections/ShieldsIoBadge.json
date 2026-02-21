@@ -455,7 +455,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{ShieldsIoURL}}badge/dynamic/json/?url={{EncodedURL}}&query&style=for-the-badge&label={{EncodedLabel}}",
+					"raw": "{{ShieldsIoURL}}badge/dynamic/json/?url={{EncodedURL}}&query={{EncodedQuery}}&style=for-the-badge&label={{EncodedLabel}}",
 					"host": [
 						"{{ShieldsIoURL}}badge"
 					],
@@ -471,7 +471,7 @@
 						},
 						{
 							"key": "query",
-							"value": null
+							"value": "{{EncodedQuery}}"
 						},
 						{
 							"key": "style",
@@ -491,12 +491,13 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "01055f1c-510f-4466-abff-d1a95578610f",
+				"id": "668865cd-eb8e-4d97-820e-72fb6efdf38a",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
 				"exec": [
 					"pm.environment.set(\"EncodedURL\", encodeURIComponent(pm.collectionVariables.get(\"jsonURL\")));",
+					"pm.environment.set(\"EncodedQuery\", encodeURIComponent(pm.collectionVariables.get(\"query\")));",
 					"pm.environment.set(\"EncodedLabel\", encodeURIComponent(pm.collectionVariables.get(\"label\")));"
 				]
 			}
@@ -504,7 +505,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "2e5dc346-e100-4c0b-9382-f25ddffb5753",
+				"id": "19106dbd-8e60-4340-a2b4-952af3f3e4d4",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -548,8 +549,12 @@
 			"value": ""
 		},
 		{
-			"value": "",
-			"type": "default"
+			"key": "query",
+			"value": ""
+		},
+		{
+			"key": "EncodedQuery",
+			"value": ""
 		}
 	]
 }
