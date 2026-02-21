@@ -459,6 +459,18 @@
 				}
 			],
 			"id": "0a012457-5876-4588-932e-765c2456284f"
+		},
+		{
+			"name": "Core",
+			"id": "3ca90f97-48c8-4794-8a75-2caa4fdcfbd9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"event": [
