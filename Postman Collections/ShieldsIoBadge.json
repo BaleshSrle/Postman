@@ -491,19 +491,19 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "b3db3d8c-6a8d-41af-98e0-e9aaec22fb07",
+				"id": "5d72009c-f578-465a-a44a-10e790c537fb",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
 				"exec": [
-					"pm.environment.set(\"EncodedURL\", encodeURIComponent(pm.collectionVariables.get(\"URL\")));"
+					"pm.environment.set(\"EncodedURL\", encodeURIComponent(pm.collectionVariables.get(\"jsonURL\")));"
 				]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
-				"id": "dcbab77b-8476-4dee-ab47-ab19ab83a726",
+				"id": "99d4d6a6-ad05-4a1a-877c-2a1288e21146",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
