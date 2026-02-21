@@ -461,7 +461,7 @@
 			"id": "0a012457-5876-4588-932e-765c2456284f"
 		},
 		{
-			"name": "Core",
+			"name": "DynamicJsonBadge",
 			"id": "3ca90f97-48c8-4794-8a75-2caa4fdcfbd9",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -477,7 +477,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "ba94a1cd-7f49-4486-8592-f7fc1ca5a093",
+				"id": "090dffa9-6182-4fa4-b640-a207549b0fab",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -489,7 +489,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "663c0929-2ac2-45bb-8cd8-19406539b6d3",
+				"id": "3cbeda53-7840-4130-8273-6aff198e4c74",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -510,6 +510,10 @@
 		},
 		{
 			"key": "ghRepo",
+			"value": ""
+		},
+		{
+			"key": "ShieldsIoURL",
 			"value": ""
 		}
 	]
