@@ -244,15 +244,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://img.shields.io/github/v/release/twbs/bootstrap?filter=v4.*&logo=bootstrap&logoColor=white&logoSize=auto&label=Bootstrap&labelColor=7952b3&color=7952b3",
-							"protocol": "https",
+							"raw": "{{ShieldsIoURL}}github/v/release/twbs/bootstrap?filter=v4.*&logo=bootstrap&logoColor=white&logoSize=auto&label=Bootstrap&labelColor=7952b3&color=7952b3",
 							"host": [
-								"img",
-								"shields",
-								"io"
+								"{{ShieldsIoURL}}github"
 							],
 							"path": [
-								"github",
 								"v",
 								"release",
 								"twbs",
@@ -302,15 +298,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://img.shields.io/github/v/tag/desktop/desktop?filter=!*-*-*&logo=github&logoColor=white&logoSize=auto&label=Github Desktop",
-							"protocol": "https",
+							"raw": "{{ShieldsIoURL}}github/v/tag/desktop/desktop?filter=!*-*-*&logo=github&logoColor=white&logoSize=auto&label=Github Desktop",
 							"host": [
-								"img",
-								"shields",
-								"io"
+								"{{ShieldsIoURL}}github"
 							],
 							"path": [
-								"github",
 								"v",
 								"tag",
 								"desktop",
@@ -444,7 +436,8 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": "{{ShieldsIoURL}}badge/dynamic/json/"
 			},
 			"response": []
 		}
