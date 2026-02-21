@@ -455,7 +455,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{ShieldsIoURL}}badge/dynamic/json/?url={{EncodedJSONurl}}&query&style&label",
+					"raw": "{{ShieldsIoURL}}badge/dynamic/json/?url={{EncodedURL}}&query&style=for-the-badge&label",
 					"host": [
 						"{{ShieldsIoURL}}badge"
 					],
@@ -467,7 +467,7 @@
 					"query": [
 						{
 							"key": "url",
-							"value": "{{EncodedJSONurl}}"
+							"value": "{{EncodedURL}}"
 						},
 						{
 							"key": "query",
@@ -475,7 +475,7 @@
 						},
 						{
 							"key": "style",
-							"value": null
+							"value": "for-the-badge"
 						},
 						{
 							"key": "label",
@@ -491,7 +491,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "5d72009c-f578-465a-a44a-10e790c537fb",
+				"id": "cc9fb635-c790-4362-9e92-38915eb8917f",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -503,7 +503,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "99d4d6a6-ad05-4a1a-877c-2a1288e21146",
+				"id": "23eac3aa-f062-49e7-a8c3-f5b9f3249269",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -532,6 +532,10 @@
 		},
 		{
 			"key": "jsonURL",
+			"value": ""
+		},
+		{
+			"key": "EncodedURL",
 			"value": ""
 		}
 	]
