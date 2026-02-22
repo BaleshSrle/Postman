@@ -437,9 +437,9 @@
 					"script": {
 						"id": "8939ad78-68c1-4211-9d5a-bca7f83b9cab",
 						"exec": [
-							"const jsonURL = pm.environment.get(\"jsonURL\");",
-							"const encodedJsonUrl = encodeURIComponent(jsonURL);",
-							"pm.variables.set(\"EncodedJSONurl\", encodedJsonUrl);"
+							"// const jsonURL = pm.environment.get(\"jsonURL\");",
+							"//const encodedJsonUrl = encodeURIComponent(jsonURL);",
+							"// pm.variables.set(\"EncodedJSONurl\", encodedJsonUrl);"
 						],
 						"type": "text/javascript",
 						"packages": {},
