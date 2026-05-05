@@ -84,6 +84,18 @@
 				"url": "https://www.zrs-rs.com/red-voznje"
 			},
 			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "10f11bc6-8295-4c6b-bb76-d0b0c43fcf7d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"event": [
