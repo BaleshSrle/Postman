@@ -93,7 +93,24 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "wss://zrs-rs.com/_blazor?id=hxQqNWj4LeK8qyH6Z2ZWrQ",
+					"protocol": "wss",
+					"host": [
+						"zrs-rs",
+						"com"
+					],
+					"path": [
+						"_blazor"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "hxQqNWj4LeK8qyH6Z2ZWrQ"
+						}
+					]
+				}
 			},
 			"response": []
 		}
