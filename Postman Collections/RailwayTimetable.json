@@ -84,35 +84,6 @@
 				"url": "https://www.zrs-rs.com/red-voznje"
 			},
 			"response": []
-		},
-		{
-			"name": "New Request",
-			"id": "10f11bc6-8295-4c6b-bb76-d0b0c43fcf7d",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "wss://zrs-rs.com/_blazor?id=hxQqNWj4LeK8qyH6Z2ZWrQ",
-					"protocol": "wss",
-					"host": [
-						"zrs-rs",
-						"com"
-					],
-					"path": [
-						"_blazor"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "hxQqNWj4LeK8qyH6Z2ZWrQ"
-						}
-					]
-				}
-			},
-			"response": []
 		}
 	],
 	"event": [
