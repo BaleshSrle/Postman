@@ -199,7 +199,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://mtel.ba/hybris/ecommerce/b2c/v1/support/customers?isResidential=true&customerInfo={{EncodedSearchField}}&cityCode=BANJA LUKA&currentPage=0",
+					"raw": "https://mtel.ba/hybris/ecommerce/b2c/v1/support/customers?isResidential=true&customerInfo={{EncodedSearchField}}&cityCode=DOBOJ&currentPage=0",
 					"protocol": "https",
 					"host": [
 						"mtel",
@@ -224,7 +224,7 @@
 						},
 						{
 							"key": "cityCode",
-							"value": "BANJA LUKA"
+							"value": "DOBOJ"
 						},
 						{
 							"key": "currentPage",
@@ -295,7 +295,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "f2a69564-7764-4260-baef-e70619b887e1",
+				"id": "7ee43e0f-672e-464e-83b2-7f185f5cf99b",
 				"type": "text/javascript",
 				"requests": {},
 				"exec": [
@@ -306,7 +306,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "b7ae210c-d9e9-435f-80dc-c735fefb0ecd",
+				"id": "7d6b0fd7-a609-4d9b-8d26-83c5d51d9019",
 				"type": "text/javascript",
 				"requests": {},
 				"exec": [
