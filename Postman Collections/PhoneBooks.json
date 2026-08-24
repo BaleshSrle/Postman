@@ -291,6 +291,18 @@
 				"url": "https://supernovabih.ba/telefonski-imenik/"
 			},
 			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "660fe94a-a245-4ca7-90c0-0e137430b567",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"event": [
